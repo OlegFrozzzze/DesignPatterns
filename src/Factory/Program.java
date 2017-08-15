@@ -2,8 +2,18 @@ package Factory;
 
 public class Program {
     public static void main(String[] args){
-        JavaDeveloper javaDeveloper = new JavaDeveloper();
+        DeveloperFactory developerFactory = createDeveloperBySpecialty("java");
+        Developer developer = developerFactory.createDeveloper();
 
-        javaDeveloper.writeJavaCode();
+        developer.writeCode();
+    }
+    static DeveloperFactory createDeveloperBySpecialty(String specialty){
+        if(specialty.equalsIgnoreCase("java"))
+            return new JavaDeveloperFactory();
+        else if(specialty.equalsIgnoreCase("c++")){
+            return new CppDeveloperFactory();
+        }else{
+            throw new RuntimeException(specialty + "is unknown specialty");
+        }
     }
 }
