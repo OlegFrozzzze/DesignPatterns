@@ -1,6 +1,5 @@
 package Factory;
 
 public interface Developer {
-    void writeCode(){
-    }
+    void writeCode();
 }
