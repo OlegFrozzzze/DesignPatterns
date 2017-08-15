@@ -1,4 +1,4 @@
-package Factory;
+package Tutorial.Factory;
 
 public class PhpDeveloper implements Developer {
     @Override
