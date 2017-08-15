@@ -1,7 +1,7 @@
 package PackageOne;
 
 public class Inheritance {
-    String name;
-    int a;
+    public String name;
+    public int age;
 }
 
