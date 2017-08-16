@@ -1,4 +1,4 @@
-package PackageOne;
+package Tutorial.PackageOne;
 
 public class Inheritance {
     public String name;

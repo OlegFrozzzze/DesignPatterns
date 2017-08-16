@@ -1,6 +1,6 @@
-package PackageTwo;
+package Tutorial.PackageOne.PackageTwo;
 
-import PackageOne.Inheritance;
+import Tutorial.PackageOne.Inheritance;
 
 public class TestInheritance extends Inheritance {
     public void Test(){
