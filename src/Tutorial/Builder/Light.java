@@ -1,6 +1,5 @@
 package Tutorial.Builder;
 
-
 public class Light {
     public static void main(String[] args) {
         StateFactory stateFactory = stateOffOnBySpecialty("On");
@@ -9,7 +8,13 @@ public class Light {
         state.state();
     }
 
-    private static StateFactory stateOffOnBySpecialty(String java) {
-        return null;
+    static StateFactory stateOffOnBySpecialty(String Status) {
+        if (Status.equalsIgnoreCase("On"))
+            return new OnFactory();
+        else if (Status.equalsIgnoreCase("Off")) {
+            return new OffFactory();
+        } else {
+            throw new RuntimeException(Status + "is unknown specialty");
+        }
     }
 }
