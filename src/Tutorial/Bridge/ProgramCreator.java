@@ -2,7 +2,10 @@ package Tutorial.Bridge;
 
 public class ProgramCreator {
     public static void main(String[] args) {
-        Program[] programs = null;
+        Program[] programs = {
+                new BankSystem(new JavaDeveloper()),
+                new StockExchange(new CppDeveloper())
+        };
         for(Program program: programs){
             program.developProgram();
         }
