@@ -7,6 +7,7 @@ public class BankSystem extends Program{
 
     @Override
     public void developProgram() {
-
+        System.out.println("Bank System development");
+        developer.writeCode();
     }
 }
