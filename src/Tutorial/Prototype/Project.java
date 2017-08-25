@@ -1,6 +1,6 @@
 package Tutorial.Prototype;
 
-public class Project {
+public class Project implements Copyable {
     private int id;
     private String projectName;
     private String sourceCode;
@@ -33,5 +33,11 @@ public class Project {
 
     public void setSourceCode(String sourceCode) {
         this.sourceCode = sourceCode;
+    }
+
+    @Override
+    public Object copy() {
+        Project copy = new Project(id, projectName, sourceCode);
+        return copy;
     }
 }
