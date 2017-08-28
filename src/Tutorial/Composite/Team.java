@@ -9,5 +9,7 @@ public class Team {
     public void addDeveloper(Developer developer){
         developers.add(developer);
     }
-
+    public void removeDeveloper(Developer developer){
+        developers.remove(developer);
+    }
 }
