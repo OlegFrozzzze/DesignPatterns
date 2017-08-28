@@ -12,4 +12,10 @@ public class Team {
     public void removeDeveloper(Developer developer){
         developers.remove(developer);
     }
+    public void createProject(){
+        System.out.println("Team creates project...\n");
+        for(Developer developer: developers){
+            developer.writeCode();
+        }
+    }
 }
