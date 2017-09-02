@@ -5,4 +5,8 @@ public class BugTracker {
     public boolean isActiveSprint(){
         return activeSprint;
     }
+    public void startSprint(){
+        System.out.println("Sprint is active");
+        activeSprint = true;
+    }
 }
