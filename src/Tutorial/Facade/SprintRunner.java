@@ -2,14 +2,8 @@ package Tutorial.Facade;
 
 public class SprintRunner {
     public static void main(String[] args) {
-        Job job = new Job();
-        job.doJob();
-        BugTracker bugTracker = new BugTracker();
-        bugTracker.startSprint();
-        Developer developer = new Developer();
-        developer.doJobBeforeDeadLine(bugTracker);
+        Workflow workflow = new Workflow();
 
-        bugTracker.finishSprint();
-        developer.doJobBeforeDeadLine(bugTracker);
+        workflow.solveProblems();
     }
 }
